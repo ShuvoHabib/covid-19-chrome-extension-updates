@@ -1,0 +1,35 @@
+{
+  "short_name": "COVID-19 Update",
+  "name": "COVID-19 Update",
+  "version": "1.2",
+  "manifest_version": 2,
+
+  "background": {
+    "scripts": ["app/background.js"]
+  },
+
+  "icons": { 
+    "16": "corona.png",
+    "48": "icon48.png",
+    "128": "icon128.png" 
+  },
+
+  "description": "COVID-19 Update",
+
+  "browser_action": {
+    "default_icon": "corona.png"
+  },
+
+  "content_scripts" : [
+    {
+      "matches": [ "<all_urls>" ],
+      "css": ["/static/css/app.css"],
+      "js": ["/static/js/content.js"]
+    }
+  ],
+  
+  "web_accessible_resources":[
+    "/static/css/content.css"
+  ],
+  "content_security_policy": "script-src 'self' 'sha256-GgRxrVOKNdB4LrRsVPDSbzvfdV4UqglmviH9GoBJ5jk='; object-src 'self'"
+}

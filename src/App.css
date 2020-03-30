@@ -1,0 +1,108 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background: #323232;
+  padding: 1px;
+}
+
+.alert-info {
+  color: #0c5460;
+  background-color: #781a1c;
+  border-color: #d95745;
+}
+
+h4 {
+  font-size: 26px;
+  margin: 15px 0 5px;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+select {
+  height: 40px;
+  border: 2px white;
+  border-radius: inherit;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+body .chrome-covid {
+  background: #8e2124;
+  color: white;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.card-width{
+  min-width: 200px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.cases {
+  color: goldenrod;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.deaths {
+  color: #ff4848;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.recovered {
+  color: #1ae021;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.alert-info {
+  padding-bottom: 30px;
+}
+
+.alert-info {
+  color: #2ecc71;
+  background-color: none !important;
+  border-color: none !important;
+}
+
+.card.card-width img {
+  box-sizing: border-box;
+  height: 150px;
+  object-fit: contain;
+  background: #781a1c;
+  padding-top: 20px;
+}
+
+.alert.alert-primary {
+  background: #8e2225;
+  color: #dddddd;
+  border-bottom: 1px solid;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  line-height: 35px;
+}
+
+.card-body p {
+  color: #dddddd;
+  font-weight: bold;
+}
