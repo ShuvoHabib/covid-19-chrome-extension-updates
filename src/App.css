@@ -63,6 +63,12 @@ body .chrome-covid {
   font-size: 25px;
 }
 
+.cases-today {
+  color: #ffa5a5;
+  font-weight: bold;
+  font-size: 25px;
+}
+
 .deaths {
   color: #ff4848;
   font-weight: bold;

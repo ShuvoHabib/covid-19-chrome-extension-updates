@@ -83,7 +83,7 @@ export default class Location extends Component {
             <img width="100%" src={this.state.flag} />
             <div className="card-body">
               <p>CASES: <span className="cases">{countryCases}</span></p>
-              <p>CASES TODAY: <span className="recovered">{countryCasesToday}</span></p>
+              <p>CASES TODAY: <span className="cases-today">{countryCasesToday}</span></p>
               <p>DEATHS: <span className="deaths">{countryCasesDeath}</span></p>
               <p>RECOVERED: <span className="recovered">{countryCasesRecovered}</span></p>
             </div>
