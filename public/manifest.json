@@ -1,6 +1,6 @@
 {
-  "short_name": "COVID-19 Update",
-  "name": "COVID-19 Update",
+  "short_name": "COVID-19 / Corona Virus Update",
+  "name": "COVID-19 / Corona Virus Stat Update",
   "version": "1.2",
   "manifest_version": 2,
 
@@ -14,7 +14,7 @@
     "128": "icon128.png" 
   },
 
-  "description": "COVID-19 Update",
+  "description": "COVID-19 / Corona Virus statistical update",
 
   "browser_action": {
     "default_icon": "corona.png"
@@ -27,9 +27,14 @@
       "js": ["/static/js/content.js"]
     }
   ],
+
+  "permissions": [
+    "tabs",
+    "activeTab"
+  ],
   
   "web_accessible_resources":[
     "/static/css/content.css"
   ],
-  "content_security_policy": "script-src 'self' 'sha256-GgRxrVOKNdB4LrRsVPDSbzvfdV4UqglmviH9GoBJ5jk='; object-src 'self'"
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
 }
