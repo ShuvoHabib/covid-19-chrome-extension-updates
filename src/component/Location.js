@@ -17,6 +17,7 @@ export default class Location extends Component {
       isLoading: false,
       deaths:'',
       recovered: '',
+      active: '',
       country: localStorage.getItem('country') || '',
       countryCases:'',
       countryCasesToday:'',
@@ -39,6 +40,7 @@ export default class Location extends Component {
         deaths: data.deaths,
         recovered: data.recovered,
         updated: data.updated,
+        active: data.active,
       })
     })
   }
@@ -60,14 +62,14 @@ export default class Location extends Component {
   }
   
   render() {
-    const { country, countryCasesToday, cases, deaths, recovered,  error, countryCases, countryCasesDeath, countryCasesRecovered } = this.state;
+    const { country,active, countryCasesToday, cases, deaths, recovered,  error, countryCases, countryCasesDeath, countryCasesRecovered } = this.state;
     return (
       <div className="">
         <div className="alert alert-primary" role="alert">
             CASES: <span className="cases">{cases}</span>,
             DEATHS: <span className="deaths">{deaths}</span>,
             <br />
-            ACTIVE: <span className="cases">{cases - recovered}</span>,
+            ACTIVE: <span className="cases">{active}</span>,
             RECOVERED: <span className="recovered">{recovered}</span>
         </div>
 

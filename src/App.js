@@ -8,7 +8,7 @@ class App extends Component {
     return (
       <div className="App container chrome-covid">
         <header className="App-header">
-          <h1 className="App-title">World's Covid-19 Updates</h1>
+          <h1 className="App-title">COVID-19 CORONAVIRUS PANDEMIC</h1>
         </header>
         <Location />
       </div>
