@@ -8,14 +8,13 @@
 }
 
 .App-header {
-  background: #350103;
+  background: #323232;
   padding: 1px;
 }
 
 .alert-info {
   color: #0c5460;
-  background-color: #781a1c;
-  border-color: #d95745;
+  background-color: #252526;
 }
 
 h4 {
@@ -36,16 +35,22 @@ h4 {
   to { transform: rotate(360deg); }
 }
 
-select {
-  height: 40px;
+h4.select-title + select {
+  height: 50px;
   border: 2px white;
   border-radius: inherit;
   margin-top: 10px;
   margin-bottom: 10px;
+  padding: 0px 15px;
+  border-radius: 10px;
+  outline: none;
+  font-size: 22px;
+  width: 90%;
+  box-sizing: border-box;
 }
 
 body .chrome-covid {
-  background: #350103;
+  background: #252526;
   color: white;
   background-repeat: no-repeat;
 }
@@ -94,14 +99,14 @@ body .chrome-covid {
   box-sizing: border-box;
   height: 150px;
   object-fit: contain;
-  background: #781a1c;
+  background: #252526;
   padding-top: 20px;
 }
 
 .alert.alert-primary {
-  background: #8e2225;
+  background: #181a1b;
   color: #dddddd;
-  border-bottom: 1px solid;
+  border-bottom: none;
   padding-bottom: 20px;
   padding-top: 20px;
   line-height: 35px;
@@ -110,4 +115,11 @@ body .chrome-covid {
 .card-body p {
   color: #dddddd;
   font-weight: bold;
+  display: inline-block;
+  margin-bottom: -10px;
+  padding-right: 10px;
+}
+a.who-url {
+  color: #dba520;
+  font-size: 12px;
 }

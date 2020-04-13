@@ -73,7 +73,7 @@ export default class Location extends Component {
             RECOVERED: <span className="recovered">{recovered}</span>
         </div>
 
-        <h4>Select any country</h4>
+        <h4 className="select-title">Select any country</h4>
         <CountryDropdown
           showDefaultOption={true}
           value={country}
@@ -86,14 +86,18 @@ export default class Location extends Component {
           <div className="card card-width">
             <img width="100%" src={this.state.flag} />
             <div className="card-body">
-              <p>CASES: <span className="cases">{countryCases}</span></p>
-              <p>CASES TODAY: <span className="cases-today">{countryCasesToday}</span></p>
-              <p>DEATHS: <span className="deaths">{countryCasesDeath}</span></p>
-              <p>RECOVERED: <span className="recovered">{countryCasesRecovered}</span></p>
+              <p>CASES: <span className="cases">{countryCases}, </span></p>
+              <p> CASES TODAY: <span className="cases-today">{countryCasesToday}, </span></p>
+              <br />              
+              <p>DEATHS: <span className="deaths">{countryCasesDeath}, </span></p>
+              <p> RECOVERED: <span className="recovered">{countryCasesRecovered}</span></p>
             </div>
           </div>
         </div>
       }
+      <a className="who-url" target="_blank" href="https://www.who.int/bangladesh/emergencies/coronavirus-disease-(covid-19)-update">
+        For more info visit WHO website
+      </a>
       </div>
     )
   }
