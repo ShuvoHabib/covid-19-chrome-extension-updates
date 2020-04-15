@@ -7,7 +7,7 @@ const NEWSAPI = 'http://newsapi.org/v2/top-headlines?' +
 'sources=bbc-news&' +
 'apiKey=4a9a9abe7bae46e89bffd531ef5a57e8';
 
-export default class Location extends Component {
+export default class Info extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -84,7 +84,7 @@ export default class Location extends Component {
         <br/>
         {countryCases && <div className="alert alert-info" role="alert">
           <div className="card card-width">
-            <img width="100%" src={this.state.flag} />
+            <img width="100%" src={this.state.flag} alt="Country" />
             <div className="card-body">
               <p>CASES: <span className="cases">{countryCases}, </span></p>
               <p> CASES TODAY: <span className="cases-today">{countryCasesToday}, </span></p>

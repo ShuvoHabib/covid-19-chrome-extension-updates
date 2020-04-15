@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Location from "./component/Location";
+import Info from "./component/Info";
 
 class App extends Component {
   render() {
@@ -10,7 +10,7 @@ class App extends Component {
         <header className="App-header">
           <h1 className="App-title">COVID-19 CORONAVIRUS PANDEMIC</h1>
         </header>
-        <Location />
+        <Info />
       </div>
     );
   }

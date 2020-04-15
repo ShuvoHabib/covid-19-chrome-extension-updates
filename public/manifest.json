@@ -1,7 +1,7 @@
 {
-  "short_name": "COVID-19 / Corona Virus Update",
-  "name": "COVID-19 / Corona Virus Stat Update",
-  "version": "1.4",
+  "short_name": "COVID-19 / Corona Virus stat update",
+  "name": "COVID-19 / Corona Virus Statistical Update",
+  "version": "1.5",
   "manifest_version": 2,
 
   "background": {
@@ -12,10 +12,6 @@
     "16": "corona.png",
     "48": "icon48.png",
     "128": "icon128.png" 
-  },
-
-  "chrome_url_overrides": {
-    "newtab": "index.html"
   },
 
   "description": "COVID-19 / Corona Virus statistical update",
