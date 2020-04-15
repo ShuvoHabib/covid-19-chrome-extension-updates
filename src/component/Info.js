@@ -3,9 +3,6 @@ import { CountryDropdown } from 'react-country-region-selector';
 
 const API = 'https://corona.lmao.ninja/all';
 const COUNTRY_NAME = 'https://corona.lmao.ninja/countries/'
-const NEWSAPI = 'http://newsapi.org/v2/top-headlines?' +
-'sources=bbc-news&' +
-'apiKey=4a9a9abe7bae46e89bffd531ef5a57e8';
 
 export default class Info extends Component {
   constructor(props) {
