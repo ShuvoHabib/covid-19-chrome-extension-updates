@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import { CountryDropdown } from 'react-country-region-selector';
 
-const API = 'https://corona.lmao.ninja/all';
-const COUNTRY_NAME = 'https://corona.lmao.ninja/countries/'
+const API = 'https://corona.lmao.ninja/v2/all';
+const COUNTRY_NAME = 'https://corona.lmao.ninja/v2/countries/'
 
 export default class Info extends Component {
   constructor(props) {
